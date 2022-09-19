@@ -1,0 +1,28 @@
+@import "mixin";
+@import "variables";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #31304e;
+}
+
+.btn {
+  @include button();
+}
+
+@media all and (min-width: 376px) {
+  body {
+    background: #0800ff;
+  }
+}
+
+@media all and (min-width: 751px) {
+  body {
+    background: #00ff0d;
+  }
+}

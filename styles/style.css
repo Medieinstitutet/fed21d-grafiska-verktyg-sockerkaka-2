@@ -1,0 +1,28 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #31304e;
+}
+
+.btn {
+  background: #fff175;
+  width: 150px;
+  height: 50px;
+  border: none;
+  border-radius: 5px;
+}
+
+@media all and (min-width: 376px) {
+  body {
+    background: #0800ff;
+  }
+}
+@media all and (min-width: 751px) {
+  body {
+    background: #00ff0d;
+  }
+}/*# sourceMappingURL=style.css.map */
