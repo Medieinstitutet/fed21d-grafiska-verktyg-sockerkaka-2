@@ -1,0 +1,55 @@
+@import "mixin";
+@import "variables";
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 4rem 1rem 2rem 1rem;
+  background: $Chamomile;
+  ::-webkit-input-placeholder {
+    font-family: "Roboto Mono", monospace;
+    font-size: 0.75rem;
+    text-decoration: underline;
+  }
+  .footerLeft {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    input {
+      margin-top: 0.6rem;
+      padding: 0.5rem;
+      border: none;
+      border-radius: 0 0.625rem;
+    }
+    .footerBtn {
+      font-family: "Roboto Mono", monospace;
+      font-size: 0.875rem;
+      width: 8rem;
+      padding: 0.5rem;
+      background: $NightSky;
+      color: $White;
+      border: none;
+      border-radius: 0.313rem;
+      &:hover {
+        background: #1c1b4e; //lägg till variabel
+      }
+      &:active {
+        background: #121047; //lägg till variabel
+      }
+    }
+  }
+  .footerRight {
+    display: flex;
+    align-items: flex-end;
+    gap: 1rem;
+    // justify-content: space-between;
+    // margin: 18px;
+    .fa-facebook {
+      color: $Black;
+    }
+    .fa-instagram {
+      color: $Black;
+    }
+  }
+}

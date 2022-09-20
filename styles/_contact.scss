@@ -1,0 +1,22 @@
+@import "mixin";
+@import "variables";
+
+.contactPageContainer {
+  color: $White;
+  margin: 0 2rem 0 1rem;
+  h2 {
+    text-align: center;
+    font-size: 1.8rem;
+    margin-bottom: 1.4rem;
+  }
+  .contactInfoContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+    img {
+      width: 7rem;
+      height: 7rem;
+    }
+  }
+}

@@ -1,0 +1,60 @@
+@import "mixin";
+@import "variables";
+
+.aboutPageContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  .aboutPageTop {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 21rem;
+    color: $White;
+    h2 {
+      font-size: 1.8rem;
+      margin-bottom: 1.4rem;
+    }
+    a:hover {
+      cursor: pointer;
+    }
+  }
+  .quoteBoxContainer {
+    margin: 3rem 0; //Ändra på tablet, desktop
+    .quoteTextOne {
+      display: flex;
+      justify-content: end;
+      flex-direction: column;
+      width: 15.625rem;
+      height: 15.625rem;
+      margin-bottom: 3rem; //Ändra på tablet, desktop
+      padding: 0 1.2rem 0.8rem 0.8rem;
+      background: $Dust;
+      border-radius: 2.5rem 0;
+
+      //Ändra till id?
+      .quoteTextOneBtn {
+        @include yellowButton();
+        margin-top: 0.8rem;
+      }
+    }
+    .quoteTextTwo {
+      display: flex;
+      justify-content: end;
+      flex-direction: column;
+      width: 15.625rem;
+      height: 15.625rem;
+      padding: 0 1.2rem 0.8rem 0.8rem;
+      background: $Dust;
+      border-radius: 2.5rem 0;
+
+      //Ändra till id?
+      .quoteTextTwoBtn {
+        @include yellowButton();
+        margin-top: 0.8rem;
+      }
+    }
+  }
+}
