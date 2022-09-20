@@ -3,7 +3,48 @@ header {
   position: sticky;
   top: 0;
   z-index: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   background: #31304e;
+  padding: 0.5rem 1.5rem;
+}
+header .menu {
+  width: 2.5rem;
+  height: 2.5rem;
+  cursor: pointer;
+}
+header .menu div {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+header .menu div span {
+  background: white;
+  width: 100%;
+  height: 0.313rem;
+  border-radius: 0.313rem;
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: transform 0.5s, width 0.5s;
+}
+header .menu .line-1 {
+  transform: translate(-50%, -0.938rem);
+}
+header .menu .line-3 {
+  transform: translate(-50%, 0.625rem);
+}
+header .openMenu .line-1 {
+  transform: translate(-50%, -50%) rotate(-45deg);
+}
+header .openMenu .line-3 {
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+header .openMenu .line-2 {
+  width: 0;
 }
 
 .backgroundContainer {
@@ -29,6 +70,17 @@ header {
   opacity: 0.8;
   border-radius: 0 2.5rem;
 }
+.backgroundContainer .background .quoteTextTop {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 18rem;
+  padding: 1.4rem;
+}
+.backgroundContainer .background .quoteTextTop a:hover {
+  cursor: pointer;
+}
 .backgroundContainer .background .acceptChallangeBtn {
   font-family: "Roboto Mono", monospace;
   font-size: 0.875rem;
@@ -44,23 +96,13 @@ header {
 }
 .backgroundContainer .background .acceptChallangeBtn:hover {
   background: #ffe70f;
+  cursor: pointer;
 }
 .backgroundContainer .background .acceptChallangeBtn:active {
   background: #ffc700;
 }
 .backgroundContainer .background .acceptChallangeBtn:disabled {
   background: #ff4d00;
-}
-.backgroundContainer .background .quoteTextTop {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 18rem;
-  padding: 1.4rem;
-}
-.backgroundContainer .background .quoteTextTop a:hover {
-  cursor: pointer;
 }
 
 .aboutPageContainer {
@@ -110,6 +152,7 @@ header {
 }
 .aboutPageContainer .quoteBoxContainer .quoteTextOne .quoteTextOneBtn:hover {
   background: #ffe70f;
+  cursor: pointer;
 }
 .aboutPageContainer .quoteBoxContainer .quoteTextOne .quoteTextOneBtn:active {
   background: #ffc700;
@@ -139,6 +182,7 @@ header {
 }
 .aboutPageContainer .quoteBoxContainer .quoteTextTwo .quoteTextTwoBtn:hover {
   background: #ffe70f;
+  cursor: pointer;
 }
 .aboutPageContainer .quoteBoxContainer .quoteTextTwo .quoteTextTwoBtn:active {
   background: #ffc700;
@@ -201,6 +245,7 @@ footer .footerLeft .footerBtn {
 }
 footer .footerLeft .footerBtn:hover {
   background: #1c1b4e;
+  cursor: pointer;
 }
 footer .footerLeft .footerBtn:active {
   background: #121047;
@@ -237,7 +282,6 @@ body h1 {
   color: #e1e2d1;
   font-family: "Fascinate", cursive;
   font-size: 2.25rem;
-  padding: 0.5rem;
 }
 html h2,
 html h3,

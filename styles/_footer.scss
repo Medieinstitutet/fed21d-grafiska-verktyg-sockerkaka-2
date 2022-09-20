@@ -15,7 +15,6 @@ footer {
     display: flex;
     align-items: center;
     flex-direction: column;
-
     input {
       margin-top: 0.6rem;
       padding: 0.5rem;
@@ -33,6 +32,7 @@ footer {
       border-radius: 0.313rem;
       &:hover {
         background: #1c1b4e; //lägg till variabel
+        cursor: pointer;
       }
       &:active {
         background: #121047; //lägg till variabel

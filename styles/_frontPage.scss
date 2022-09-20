@@ -22,13 +22,6 @@
       opacity: 0.8;
       border-radius: 0 2.5rem;
     }
-    .acceptChallangeBtn {
-      @include yellowButton();
-      position: absolute;
-      top: 112%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-    }
     .quoteTextTop {
       position: absolute;
       top: 50%;
@@ -39,6 +32,13 @@
       a:hover {
         cursor: pointer;
       }
+    }
+    .acceptChallangeBtn {
+      @include yellowButton();
+      position: absolute;
+      top: 112%;
+      left: 50%;
+      transform: translate(-50%, -50%);
     }
   }
 }
