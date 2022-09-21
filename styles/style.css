@@ -43,7 +43,7 @@ header .menuLinks ul li a {
   color: #000000;
 }
 header .menuLinks ul li a:hover {
-  border-bottom: 0.188rem solid #000000;
+  border-bottom: 0.094rem solid #000000;
 }
 header .menuLinks img {
   margin-top: 5rem;
@@ -92,6 +92,13 @@ header .openMenu .line-2 {
   width: 0;
 }
 
+@media all and (min-width: 750px) {
+  header .menuLinks ul img {
+    margin-top: 2rem;
+    width: 12.5rem;
+    height: 12.5rem;
+  }
+}
 .backgroundContainer {
   margin-bottom: 8rem;
 }
@@ -150,6 +157,41 @@ header .openMenu .line-2 {
   background: #ff4d00;
 }
 
+@media all and (min-width: 750px) {
+  .backgroundContainer .background .quoteBoxTop {
+    top: 42%;
+    left: 77%;
+  }
+  .backgroundContainer .background .quoteTextTop {
+    top: 42%;
+    left: 77%;
+  }
+  .backgroundContainer .background .acceptChallangeBtn {
+    top: 82%;
+    left: 77%;
+  }
+}
+@media all and (min-width: 1440px) {
+  .backgroundContainer .background {
+    height: 50rem;
+  }
+  .backgroundContainer .background .quoteBoxTop {
+    top: 45%;
+    left: 74%;
+    width: 43rem;
+    height: 26.5rem;
+  }
+  .backgroundContainer .background .quoteTextTop {
+    top: 45%;
+    left: 74%;
+    width: 43rem;
+    font-size: 24px;
+  }
+  .backgroundContainer .background .acceptChallangeBtn {
+    top: 80%;
+    left: 74%;
+  }
+}
 .aboutPageContainer {
   display: flex;
   justify-content: center;
@@ -165,13 +207,15 @@ header .openMenu .line-2 {
   color: #ffffff;
 }
 .aboutPageContainer .aboutPageTop h2 {
-  font-size: 1.8rem;
+  font-size: 2rem;
   margin-bottom: 1.4rem;
 }
 .aboutPageContainer .aboutPageTop a:hover {
   cursor: pointer;
 }
 .aboutPageContainer .quoteBoxContainer {
+  display: flex;
+  flex-direction: column;
   margin: 3rem 0;
 }
 .aboutPageContainer .quoteBoxContainer .quoteTextOne {
@@ -236,18 +280,36 @@ header .openMenu .line-2 {
   background: #ff4d00;
 }
 
+@media all and (min-width: 750px) {
+  .aboutPageContainer {
+    margin-top: -4rem;
+  }
+  .aboutPageContainer .aboutPageTop {
+    align-items: flex-start;
+    width: 33.5rem;
+    margin-bottom: 1rem;
+  }
+  .aboutPageContainer .quoteBoxContainer {
+    flex-direction: row;
+    gap: 4rem;
+  }
+  .aboutPageContainer .quoteBoxContainer .quoteTextTwo {
+    margin: 5rem 0 5rem 0;
+  }
+}
 .contactPageContainer {
   color: #ffffff;
-  margin: 0 2rem 0 1rem;
 }
 .contactPageContainer h2 {
   text-align: center;
-  font-size: 1.8rem;
+  font-size: 2rem;
   margin-bottom: 1.4rem;
 }
 .contactPageContainer .contactInfoContainer {
+  gap: 20%;
+  margin: 0 5% 0 4%;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
   margin-bottom: 2rem;
 }
@@ -255,11 +317,29 @@ header .openMenu .line-2 {
   width: 7rem;
   height: 7rem;
 }
+.contactPageContainer .contactInfoContainer span {
+  display: inline-block;
+}
 
+@media all and (min-width: 750px) {
+  .contactPageContainer {
+    margin-bottom: 4rem;
+  }
+  .contactPageContainer h2 {
+    margin-bottom: 4rem;
+  }
+  .contactPageContainer .contactInfoContainer {
+    gap: 10rem;
+  }
+  .contactPageContainer .contactInfoContainer img {
+    width: 12.5rem;
+    height: 12.5rem;
+  }
+}
 footer {
   display: flex;
   justify-content: space-between;
-  padding: 4rem 1rem 2rem 1rem;
+  padding: 3.5rem 1rem 2rem 1rem;
   background: #fff175;
 }
 footer ::-webkit-input-placeholder {
@@ -269,30 +349,41 @@ footer ::-webkit-input-placeholder {
 }
 footer .footerLeft {
   display: flex;
-  align-items: center;
   flex-direction: column;
 }
-footer .footerLeft input {
+footer .footerLeft span {
+  display: inline-block;
+}
+footer .footerLeft div {
+  display: flex;
+  flex-direction: column;
+  width: 10rem;
+}
+footer .footerLeft div input {
   margin-top: 0.6rem;
   padding: 0.5rem;
   border: none;
   border-radius: 0 0.625rem;
 }
-footer .footerLeft .footerBtn {
+footer .footerLeft div .btnDiv {
+  display: flex;
+  align-items: center;
+}
+footer .footerLeft div .btnDiv .footerBtn {
   font-family: "Roboto Mono", monospace;
-  font-size: 0.875rem;
-  width: 8rem;
+  font-size: 0.75rem;
+  width: 6.25rem;
   padding: 0.5rem;
   background: #31304e;
   color: #ffffff;
   border: none;
   border-radius: 0.313rem;
 }
-footer .footerLeft .footerBtn:hover {
+footer .footerLeft div .btnDiv .footerBtn:hover {
   background: #1c1b4e;
   cursor: pointer;
 }
-footer .footerLeft .footerBtn:active {
+footer .footerLeft div .btnDiv .footerBtn:active {
   background: #121047;
 }
 footer .footerRight {
@@ -307,6 +398,23 @@ footer .footerRight .fa-instagram {
   color: #000000;
 }
 
+@media all and (min-width: 750px) {
+  footer {
+    padding-top: 2rem;
+  }
+  footer .footerLeft input {
+    margin-bottom: 10px;
+  }
+  footer .footerLeft div {
+    flex-direction: row;
+    align-items: center;
+    gap: 12px;
+  }
+  footer .footerRight {
+    align-items: center;
+    margin-right: 2rem;
+  }
+}
 * {
   margin: 0;
   padding: 0;
@@ -339,15 +447,4 @@ body h4,
 body h5,
 body h6 {
   font-family: "Domine", serif;
-}
-
-@media all and (min-width: 376px) {
-  body {
-    background: #0800ff;
-  }
-}
-@media all and (min-width: 751px) {
-  body {
-    background: #00ff0d;
-  }
 }/*# sourceMappingURL=style.css.map */

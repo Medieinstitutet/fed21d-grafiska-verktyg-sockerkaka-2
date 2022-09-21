@@ -42,3 +42,44 @@
     }
   }
 }
+
+@media all and (min-width: 750px) {
+  .backgroundContainer {
+    .background {
+      .quoteBoxTop {
+        top: 42%;
+        left: 77%;
+      }
+      .quoteTextTop {
+        top: 42%;
+        left: 77%;
+      }
+      .acceptChallangeBtn {
+        top: 82%;
+        left: 77%;
+      }
+    }
+  }
+}
+
+@media all and (min-width: 1440px) {
+  .backgroundContainer .background {
+    height: 50rem;
+    .quoteBoxTop {
+      top: 45%;
+      left: 74%;
+      width: 43rem;
+      height: 26.5rem;
+    }
+    .quoteTextTop {
+      top: 45%;
+      left: 74%;
+      width: 43rem;
+      font-size: 24px;
+    }
+    .acceptChallangeBtn {
+      top: 80%;
+      left: 74%;
+    }
+  }
+}

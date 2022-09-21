@@ -14,7 +14,7 @@
     width: 21rem;
     color: $White;
     h2 {
-      font-size: 1.8rem;
+      font-size: 2rem;
       margin-bottom: 1.4rem;
     }
     a:hover {
@@ -22,6 +22,8 @@
     }
   }
   .quoteBoxContainer {
+    display: flex;
+    flex-direction: column;
     margin: 3rem 0; //Ändra på tablet, desktop
     .quoteTextOne {
       display: flex;
@@ -52,6 +54,41 @@
         //Ändra till id?
         @include yellowButton();
         margin-top: 0.8rem;
+      }
+    }
+  }
+}
+
+@media all and (min-width: 750px) {
+  .aboutPageContainer {
+    margin-top: -4rem;
+    .aboutPageTop {
+      align-items: flex-start;
+      width: 33.5rem;
+      margin-bottom: 1rem;
+    }
+    .quoteBoxContainer {
+      flex-direction: row;
+      gap: 4rem;
+      .quoteTextTwo {
+        margin: 5rem 0 5rem 0;
+      }
+    }
+  }
+}
+
+@media all and (min-width: 1440px) {
+  .aboutPageContainer {
+    .aboutPageTop {
+    }
+    .quoteBoxContainer {
+      .quoteTextOne {
+        .quoteTextOneBtn {
+        }
+      }
+      .quoteTextTwo {
+        .quoteTextTwoBtn {
+        }
       }
     }
   }
