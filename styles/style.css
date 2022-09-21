@@ -9,9 +9,54 @@ header {
   background: #31304e;
   padding: 0.5rem 1.5rem;
 }
+header .menuLinks {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 100%;
+  width: 100%;
+  background: #31304e;
+}
+header .menuLinks ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 3.125rem;
+  height: 80%;
+  width: 80%;
+  font-family: "Domine", serif;
+  font-size: 2rem;
+  background: #d9d9d9;
+  border-radius: 0 2.5rem;
+}
+header .menuLinks ul li {
+  list-style: none;
+  display: inline-block;
+}
+header .menuLinks ul li a {
+  text-decoration: none;
+  color: #000000;
+}
+header .menuLinks ul li a:hover {
+  border-bottom: 0.188rem solid #000000;
+}
+header .menuLinks img {
+  margin-top: 5rem;
+  width: 7rem;
+  height: 7rem;
+}
+header .openMenuLinks {
+  display: flex;
+}
 header .menu {
   width: 2.5rem;
   height: 2.5rem;
+  z-index: 1;
   cursor: pointer;
 }
 header .menu div {
