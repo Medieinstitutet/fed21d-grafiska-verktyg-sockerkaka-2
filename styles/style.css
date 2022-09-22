@@ -1,6 +1,5 @@
 header {
-  position: -webkit-sticky;
-  position: sticky;
+  position: static;
   top: 0;
   z-index: 1;
   display: flex;
@@ -8,6 +7,9 @@ header {
   align-items: center;
   background: #31304e;
   padding: 0.5rem 1.5rem;
+}
+header .logo:hover {
+  cursor: pointer;
 }
 header .menuLinks {
   display: none;
@@ -17,6 +19,7 @@ header .menuLinks {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  z-index: 2;
   height: 100%;
   width: 100%;
   background: #31304e;
@@ -56,7 +59,7 @@ header .openMenuLinks {
 header .menu {
   width: 2.5rem;
   height: 2.5rem;
-  z-index: 1;
+  z-index: 999;
   cursor: pointer;
 }
 header .menu div {
@@ -99,6 +102,44 @@ header .openMenu .line-2 {
     height: 12.5rem;
   }
 }
+@media all and (min-width: 1440px) {
+  header .logo {
+    font-size: 3.125rem;
+  }
+  header .menuLinks {
+    display: flex;
+    position: static;
+    height: 0;
+    width: 0;
+    margin-right: 22rem;
+  }
+  header .menuLinks ul {
+    display: flex;
+    flex-direction: row;
+    gap: 6rem;
+    font-weight: 700;
+  }
+  header .menuLinks ul li {
+    list-style: none;
+    display: inline-block;
+  }
+  header .menuLinks ul li a {
+    text-decoration: none;
+    color: #ffffff;
+  }
+  header .menuLinks ul li a:hover {
+    border-bottom: 0.2rem solid #ffffff;
+  }
+  header .menuLinks img {
+    display: none;
+  }
+  header .openMenuLinks {
+    display: flex;
+  }
+  header .menu {
+    display: none;
+  }
+}
 .backgroundContainer {
   margin-bottom: 8rem;
 }
@@ -132,6 +173,10 @@ header .openMenu .line-2 {
 }
 .backgroundContainer .background .quoteTextTop a:hover {
   cursor: pointer;
+  font-weight: 600;
+}
+.backgroundContainer .background .quoteTextTop a:active {
+  background: #fff175;
 }
 .backgroundContainer .background .acceptChallangeBtn {
   font-family: "Roboto Mono", monospace;
@@ -173,7 +218,7 @@ header .openMenu .line-2 {
 }
 @media all and (min-width: 1440px) {
   .backgroundContainer .background {
-    height: 50rem;
+    height: 47rem;
   }
   .backgroundContainer .background .quoteBoxTop {
     top: 45%;
@@ -212,6 +257,11 @@ header .openMenu .line-2 {
 }
 .aboutPageContainer .aboutPageTop a:hover {
   cursor: pointer;
+  font-weight: 600;
+}
+.aboutPageContainer .aboutPageTop a:active {
+  background: #fff175;
+  color: #000000;
 }
 .aboutPageContainer .quoteBoxContainer {
   display: flex;
@@ -473,6 +523,51 @@ footer .footerRight .fa-instagram {
   footer .footerRight {
     align-items: center;
     margin-right: 2rem;
+  }
+}
+.cookieContainer {
+  position: fixed;
+  bottom: 0;
+  background: #000000;
+  padding: 32px;
+  z-index: 1;
+}
+.cookieContainer p {
+  color: #ffffff;
+}
+.cookieContainer .cookieBtn {
+  font-family: "Roboto Mono", monospace;
+  font-size: 0.875rem;
+  background: #fff175;
+  width: 9.375rem;
+  height: 3.125rem;
+  border: none;
+  border-radius: 0.313rem;
+  margin-top: 1rem;
+}
+.cookieContainer .cookieBtn:hover {
+  background: #ffe70f;
+  cursor: pointer;
+}
+.cookieContainer .cookieBtn:active {
+  background: #ffc700;
+}
+.cookieContainer .cookieBtn:disabled {
+  background: #ff4d00;
+}
+
+@media all and (min-width: 1440px) {
+  .cookieContainer {
+    display: flex;
+    flex-direction: column;
+    margin: 0 8rem;
+  }
+  .cookieContainer p {
+    margin-right: 4rem;
+  }
+  .cookieContainer .cookieBtnContainer {
+    display: flex;
+    justify-content: end;
   }
 }
 * {

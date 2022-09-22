@@ -19,16 +19,8 @@
     <script defer src="./script.js"></script>
   </head>
   <body>
-    <!-- 
-
-    semantiska taggar
-
-    ändra knappar till id
-
-     -->
-
     <header>
-      <h1>Reading<br />Rivalry</h1>
+      <h1 class="logo">Reading<br />Rivalry</h1>
       <div class="menu" id="menu">
         <div>
           <span class="line-1"></span>
@@ -50,68 +42,70 @@
       </nav>
     </header>
 
-    <div class="backgroundContainer">
-      <div class="background">
-        <div class="quoteBoxTop"></div>
-        <p class="quoteTextTop">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea. <a><u>Read more</u></a>
-        </p>
-        <button class="acceptChallangeBtn">Accept Challange</button>
+    <main>
+      <div class="backgroundContainer">
+        <div class="background">
+          <article class="quoteBoxTop"></article>
+          <p class="quoteTextTop">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea. <a><u>Read more</u></a>
+          </p>
+          <button class="acceptChallangeBtn">Accept Challange</button>
+        </div>
       </div>
-    </div>
 
-    <div class="aboutPageContainer">
-      <div class="aboutPageTop">
-        <h2>About the challenge</h2>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. <a><u>Read more</u></a>
-        </p>
-      </div>
-      <div class="quoteBoxContainer">
-        <div class="quoteTextOne">
+      <div class="aboutPageContainer">
+        <article class="aboutPageTop">
+          <h2>About the challenge</h2>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut do eiusmod tempor
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. <a><u>Read more</u></a>
           </p>
-          <button class="quoteTextOneBtn">Join challenge alone</button>
-        </div>
-        <div class="quoteTextTwo">
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut do eiusmod tempor
-          </p>
-          <button class="quoteTextTwoBtn">Challenge your friends</button>
+        </article>
+        <div class="quoteBoxContainer">
+          <article class="quoteTextOne">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut do eiusmod tempor
+            </p>
+            <button class="quoteTextOneBtn">Join challenge alone</button>
+          </article>
+          <div class="quoteTextTwo">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut do eiusmod tempor
+            </p>
+            <button class="quoteTextTwoBtn">Challenge your friends</button>
+          </div>
         </div>
       </div>
-    </div>
 
-    <div class="contactPageContainer">
-      <h2>Contact</h2>
-      <div class="contactInfoContainer">
-        <div>
-          <img
-            src="./assets/images&symbols/open-book-symbol.png"
-            alt="open book"
-          />
+      <section class="contactPageContainer">
+        <h2>Contact</h2>
+        <div class="contactInfoContainer">
+          <div>
+            <img
+              src="./assets/images&symbols/open-book-symbol.png"
+              alt="open book"
+            />
+          </div>
+          <div>
+            <p>
+              4 River street<br />
+              SW2 6PS<br />
+              London<br />
+              UK<br /><br />
+              reading@<span>rivalry.com</span><br />
+              +447444303030
+            </p>
+          </div>
         </div>
-        <div>
-          <p>
-            4 River street<br />
-            SW2 6PS<br />
-            London<br />
-            UK<br /><br />
-            reading@<span>rivalry.com</span><br />
-            +447444303030
-          </p>
-        </div>
-      </div>
-    </div>
+      </section>
+    </main>
 
     <footer>
       <div class="footerLeft">
@@ -128,12 +122,23 @@
       </div>
       <div class="footerRight">
         <a href="https://www.facebook.com/" target="_blank">
-          <i class="fa-brands fa-facebook fa-2x"></i>
+          <i class="fa-brands fa-facebook fa-3x"></i>
         </a>
         <a href="https://www.instagram.com/" target="_blank">
-          <i class="fa-brands fa-instagram fa-2x"></i>
+          <i class="fa-brands fa-instagram fa-3x"></i>
         </a>
       </div>
     </footer>
+
+    <div class="cookieContainer" id="cookieContainer">
+      <p>
+        Cookies ipsum. Cookies ipsum is poetry about cookies and must be
+        accepted before it disappears by clicking the button to the right. If
+        user not happy, changes can be made by following the link.
+      </p>
+      <div class="cookieBtnContainer">
+        <button class="cookieBtn" id="cookieBtn">Accept cookies</button>
+      </div>
+    </div>
   </body>
 </html>

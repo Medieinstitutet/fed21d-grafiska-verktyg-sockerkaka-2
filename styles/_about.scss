@@ -19,24 +19,28 @@
     }
     a:hover {
       cursor: pointer;
+      font-weight: 600;
+    }
+    a:active {
+      background: $Chamomile;
+      color: $Black;
     }
   }
   .quoteBoxContainer {
     display: flex;
     flex-direction: column;
-    margin: 3rem 0; //Ändra på tablet, desktop
+    margin: 3rem 0;
     .quoteTextOne {
       display: flex;
       justify-content: end;
       flex-direction: column;
       width: 15.625rem;
       height: 15.625rem;
-      margin-bottom: 3rem; //Ändra på tablet, desktop
+      margin-bottom: 3rem;
       padding: 0 1.2rem 0.8rem 0.8rem;
       background: $Dust;
       border-radius: 2.5rem 0;
       .quoteTextOneBtn {
-        //Ändra till id?
         @include yellowButton();
         margin-top: 0.8rem;
       }
@@ -51,7 +55,6 @@
       background: $Dust;
       border-radius: 2.5rem 0;
       .quoteTextTwoBtn {
-        //Ändra till id?
         @include yellowButton();
         margin-top: 0.8rem;
       }

@@ -31,6 +31,10 @@
       padding: 1.4rem;
       a:hover {
         cursor: pointer;
+        font-weight: 600;
+      }
+      a:active {
+        background: $Chamomile;
       }
     }
     .acceptChallangeBtn {
@@ -64,7 +68,7 @@
 
 @media all and (min-width: 1440px) {
   .backgroundContainer .background {
-    height: 50rem;
+    height: 47rem;
     .quoteBoxTop {
       top: 45%;
       left: 74%;

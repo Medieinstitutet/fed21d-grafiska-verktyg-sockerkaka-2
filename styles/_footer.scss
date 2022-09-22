@@ -40,11 +40,11 @@ footer {
           border: none;
           border-radius: 0.313rem;
           &:hover {
-            background: #1c1b4e; //lägg till variabel
+            background: $hoverPurpleBtn;
             cursor: pointer;
           }
           &:active {
-            background: #121047; //lägg till variabel
+            background: $activePurpleBtn;
           }
         }
       }
@@ -81,7 +81,4 @@ footer {
       margin-right: 2rem;
     }
   }
-}
-
-@media all and (min-width: 1440px) {
 }
