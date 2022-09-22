@@ -11,6 +11,16 @@ header {
 header .logo:hover {
   cursor: pointer;
 }
+header .gRotate {
+  display: inline-block;
+  -webkit-animation: spin 1.5s normal;
+          animation: spin 1.5s normal;
+}
+header .yRotate {
+  display: inline-block;
+  -webkit-animation: 1.5s spin 1.2s normal;
+          animation: 1.5s spin 1.2s normal;
+}
 header .menuLinks {
   display: none;
   justify-content: center;
@@ -95,6 +105,23 @@ header .openMenu .line-2 {
   width: 0;
 }
 
+@-webkit-keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
 @media all and (min-width: 750px) {
   header .menuLinks ul img {
     margin-top: 2rem;

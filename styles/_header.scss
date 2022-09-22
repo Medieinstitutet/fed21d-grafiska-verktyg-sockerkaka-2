@@ -13,6 +13,14 @@ header {
   .logo:hover {
     cursor: pointer;
   }
+  .gRotate {
+    display: inline-block;
+    animation: spin 1.5s normal;
+  }
+  .yRotate {
+    display: inline-block;
+    animation: 1.5s spin 1.2s normal;
+  }
   .menuLinks {
     display: none;
     justify-content: center;
@@ -95,6 +103,15 @@ header {
   }
   .openMenu .line-2 {
     width: 0;
+  }
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
   }
 }
 
