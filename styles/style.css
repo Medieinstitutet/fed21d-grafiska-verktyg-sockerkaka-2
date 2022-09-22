@@ -297,6 +297,50 @@ header .openMenu .line-2 {
     margin: 5rem 0 5rem 0;
   }
 }
+@media all and (min-width: 1440px) {
+  .aboutPageContainer {
+    justify-content: flex-end;
+    align-items: initial;
+    flex-direction: initial;
+  }
+  .aboutPageContainer .aboutPageTop {
+    position: absolute;
+    top: 50%;
+    left: 25%;
+    transform: translate(-50%, 180%);
+    width: 33rem;
+  }
+  .aboutPageContainer .aboutPageTop h2 {
+    font-size: 2.5rem;
+  }
+  .aboutPageContainer .aboutPageTop p {
+    font-size: 1.5rem;
+    line-height: 1.875rem;
+  }
+  .aboutPageContainer .quoteBoxContainer {
+    gap: 0;
+    margin: 10rem 6rem 8rem 0;
+  }
+  .aboutPageContainer .quoteBoxContainer .quoteTextOne {
+    justify-content: end;
+    width: 22.5rem;
+    height: 18.75rem;
+    margin-top: 18.77rem;
+  }
+  .aboutPageContainer .quoteBoxContainer .quoteTextOne p {
+    font-size: 1.5rem;
+    line-height: 1.875rem;
+  }
+  .aboutPageContainer .quoteBoxContainer .quoteTextTwo {
+    width: 22.5rem;
+    height: 18.75rem;
+    margin: 0;
+  }
+  .aboutPageContainer .quoteBoxContainer .quoteTextTwo p {
+    font-size: 1.5rem;
+    line-height: 1.875rem;
+  }
+}
 .contactPageContainer {
   color: #ffffff;
 }
@@ -334,6 +378,22 @@ header .openMenu .line-2 {
   .contactPageContainer .contactInfoContainer img {
     width: 12.5rem;
     height: 12.5rem;
+  }
+}
+@media all and (min-width: 1440px) {
+  .contactPageContainer {
+    margin-bottom: 8rem;
+  }
+  .contactPageContainer .contactInfoContainer {
+    gap: 28rem;
+  }
+  .contactPageContainer .contactInfoContainer p {
+    font-size: 1.5rem;
+    line-height: 1.875rem;
+  }
+  .contactPageContainer .contactInfoContainer img {
+    width: 19.375rem;
+    height: 19.375rem;
   }
 }
 footer {

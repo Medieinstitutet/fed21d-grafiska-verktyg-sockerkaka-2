@@ -79,15 +79,43 @@
 
 @media all and (min-width: 1440px) {
   .aboutPageContainer {
+    justify-content: flex-end;
+    align-items: initial;
+    flex-direction: initial;
     .aboutPageTop {
+      position: absolute;
+      top: 50%;
+      left: 25%;
+      transform: translate(-50%, 180%);
+      width: 33rem;
+      h2 {
+        font-size: 2.5rem;
+      }
+      p {
+        font-size: 1.5rem;
+        line-height: 1.875rem;
+      }
     }
     .quoteBoxContainer {
+      gap: 0;
+      margin: 10rem 6rem 8rem 0;
       .quoteTextOne {
-        .quoteTextOneBtn {
+        justify-content: end;
+        width: 22.5rem;
+        height: 18.75rem;
+        margin-top: 18.77rem;
+        p {
+          font-size: 1.5rem;
+          line-height: 1.875rem;
         }
       }
       .quoteTextTwo {
-        .quoteTextTwoBtn {
+        width: 22.5rem;
+        height: 18.75rem;
+        margin: 0;
+        p {
+          font-size: 1.5rem;
+          line-height: 1.875rem;
         }
       }
     }
