@@ -15,6 +15,10 @@
     justify-content: space-evenly;
     align-items: center;
     margin-bottom: 2rem;
+    address {
+      font-family: "Roboto Mono", monospace;
+      line-height: 1.563rem;
+    }
     img {
       width: 7rem;
       height: 7rem;
@@ -46,7 +50,9 @@
     margin-bottom: 8rem;
     .contactInfoContainer {
       gap: 28rem;
-      p {
+      address {
+        font-family: "Roboto Mono", monospace;
+        line-height: 1.563rem;
         font-size: 1.5rem;
         line-height: 1.875rem;
       }
