@@ -1,0 +1,84 @@
+@import "mixin";
+@import "variables";
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 3.5rem 1rem 2rem 1rem;
+  background: $Chamomile;
+  ::-webkit-input-placeholder {
+    font-family: "Roboto Mono", monospace;
+    font-size: 0.75rem;
+    text-decoration: underline;
+  }
+  .footerLeft {
+    display: flex;
+    flex-direction: column;
+    span {
+      display: inline-block;
+    }
+    div {
+      display: flex;
+      flex-direction: column;
+      width: 10rem;
+      input {
+        margin-top: 0.6rem;
+        padding: 0.5rem;
+        border: none;
+        border-radius: 0 0.625rem;
+      }
+      .btnDiv {
+        display: flex;
+        align-items: center;
+        .footerBtn {
+          font-family: "Roboto Mono", monospace;
+          font-size: 0.75rem;
+          width: 6.25rem;
+          padding: 0.5rem;
+          background: $NightSky;
+          color: $White;
+          border: none;
+          border-radius: 0.313rem;
+          &:hover {
+            background: $hoverPurpleBtn;
+            cursor: pointer;
+          }
+          &:active {
+            background: $activePurpleBtn;
+          }
+        }
+      }
+    }
+  }
+  .footerRight {
+    display: flex;
+    align-items: flex-end;
+    gap: 1rem;
+    .fa-facebook {
+      color: $Black;
+    }
+    .fa-instagram {
+      color: $Black;
+    }
+  }
+}
+
+@media all and (min-width: 750px) {
+  footer {
+    padding-top: 2rem;
+    .footerLeft {
+      input {
+        margin-bottom: 10px;
+      }
+      div {
+        flex-direction: row;
+        align-items: center;
+        gap: 12px;
+      }
+    }
+    .footerRight {
+      align-items: center;
+      margin-right: 2rem;
+    }
+  }
+}

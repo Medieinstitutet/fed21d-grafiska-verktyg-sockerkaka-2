@@ -1,0 +1,21 @@
+@import "variables";
+
+@mixin yellowButton() {
+  font-family: "Roboto Mono", monospace;
+  font-size: 0.875rem;
+  background: $Chamomile;
+  width: 9.375rem;
+  height: 3.125rem;
+  border: none;
+  border-radius: 0.313rem;
+  &:hover {
+    background: $Sunflower;
+    cursor: pointer;
+  }
+  &:active {
+    background: $Honey;
+  }
+  &:disabled {
+    background: $Lava;
+  }
+}

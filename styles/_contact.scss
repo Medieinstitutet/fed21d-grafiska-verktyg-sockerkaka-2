@@ -1,0 +1,65 @@
+@import "mixin";
+@import "variables";
+
+.contactPageContainer {
+  color: $White;
+  h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 1.4rem;
+  }
+  .contactInfoContainer {
+    gap: 20%;
+    margin: 0 5% 0 4%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 2rem;
+    address {
+      font-family: "Roboto Mono", monospace;
+      line-height: 1.563rem;
+    }
+    img {
+      width: 7rem;
+      height: 7rem;
+    }
+    span {
+      display: inline-block;
+    }
+  }
+}
+
+@media all and (min-width: 750px) {
+  .contactPageContainer {
+    margin-bottom: 4rem;
+    h2 {
+      margin-bottom: 4rem;
+    }
+    .contactInfoContainer {
+      gap: 10rem;
+      img {
+        width: 12.5rem;
+        height: 12.5rem;
+      }
+    }
+  }
+}
+
+@media all and (min-width: 1440px) {
+  .contactPageContainer {
+    margin-bottom: 8rem;
+    .contactInfoContainer {
+      gap: 28rem;
+      address {
+        font-family: "Roboto Mono", monospace;
+        line-height: 1.563rem;
+        font-size: 1.5rem;
+        line-height: 1.875rem;
+      }
+      img {
+        width: 19.375rem;
+        height: 19.375rem;
+      }
+    }
+  }
+}

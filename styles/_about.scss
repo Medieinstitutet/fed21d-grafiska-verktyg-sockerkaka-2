@@ -1,0 +1,126 @@
+@import "mixin";
+@import "variables";
+
+.aboutPageContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  .aboutPageTop {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 21rem;
+    color: $White;
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 1.4rem;
+    }
+    a:hover {
+      cursor: pointer;
+      font-weight: 600;
+    }
+    a:active {
+      background: $Chamomile;
+      color: $Black;
+    }
+  }
+  .quoteBoxContainer {
+    display: flex;
+    flex-direction: column;
+    margin: 3rem 0;
+    .quoteTextOne {
+      display: flex;
+      justify-content: end;
+      flex-direction: column;
+      width: 15.625rem;
+      height: 15.625rem;
+      margin-bottom: 3rem;
+      padding: 0 1.2rem 0.8rem 0.8rem;
+      background: $Dust;
+      border-radius: 2.5rem 0;
+      .quoteTextOneBtn {
+        @include yellowButton();
+        margin-top: 0.8rem;
+      }
+    }
+    .quoteTextTwo {
+      display: flex;
+      justify-content: end;
+      flex-direction: column;
+      width: 15.625rem;
+      height: 15.625rem;
+      padding: 0 1.2rem 0.8rem 0.8rem;
+      background: $Dust;
+      border-radius: 2.5rem 0;
+      .quoteTextTwoBtn {
+        @include yellowButton();
+        margin-top: 0.8rem;
+      }
+    }
+  }
+}
+
+@media all and (min-width: 750px) {
+  .aboutPageContainer {
+    margin-top: -4rem;
+    .aboutPageTop {
+      align-items: flex-start;
+      width: 33.5rem;
+      margin-bottom: 1rem;
+    }
+    .quoteBoxContainer {
+      flex-direction: row;
+      gap: 4rem;
+      .quoteTextTwo {
+        margin: 5rem 0 5rem 0;
+      }
+    }
+  }
+}
+
+@media all and (min-width: 1440px) {
+  .aboutPageContainer {
+    justify-content: flex-end;
+    align-items: initial;
+    flex-direction: initial;
+    .aboutPageTop {
+      position: absolute;
+      top: 50%;
+      left: 25%;
+      transform: translate(-50%, 180%);
+      width: 33rem;
+      h2 {
+        font-size: 2.5rem;
+      }
+      p {
+        font-size: 1.5rem;
+        line-height: 1.875rem;
+      }
+    }
+    .quoteBoxContainer {
+      gap: 0;
+      margin: 10rem 6rem 8rem 0;
+      .quoteTextOne {
+        justify-content: end;
+        width: 22.5rem;
+        height: 18.75rem;
+        margin-top: 18.77rem;
+        p {
+          font-size: 1.5rem;
+          line-height: 1.875rem;
+        }
+      }
+      .quoteTextTwo {
+        width: 22.5rem;
+        height: 18.75rem;
+        margin: 0;
+        p {
+          font-size: 1.5rem;
+          line-height: 1.875rem;
+        }
+      }
+    }
+  }
+}
